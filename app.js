@@ -122,6 +122,8 @@ function logoutUser() {
     .then(() => {
       // Sign-out successful.
       userForm.style.display = "block";
+      signinDiv.style.display = 'none';
+      signupDiv.style.display = 'block';
       welcome.style.display = "none";
       toDos_Box.style.display = 'none';
     })
